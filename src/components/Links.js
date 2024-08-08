@@ -1,4 +1,3 @@
-import icon from "../assets/icon.jpg";
 import durabilityPingThumb from "../assets/thumbnails/durability-ping.png";
 import coordinatesHudThumb from "../assets/thumbnails/coordinates-hud.png";
 import dayAndEntityCounterThumb from "../assets/thumbnails/day-and-entity-counter.png";
@@ -13,33 +12,7 @@ import dynamicDayCounterThumb from "../assets/thumbnails/dynamic-day-counter.jpg
 
 const links = [
   {
-    id: "/",
-    title: "Andromedarius Download Pages",
-    image: icon,
-    ignoreWebRecommend: true,
-    links: [
-      { name: "Coordinates HUD", url: "/download/coordinates-hud" },
-      { name: "Durability Ping!", url: "/download/durability-ping" },
-      { name: "Day & Entity Counter", url: "/download/day-and-entity-counter" },
-      { name: "Biome Check", url: "/download/biome-check" },
-      { name: "Trade Unlocker", url: "/download/trade-unlocker" },
-      {
-        name: "Visualize Enchanted Book",
-        url: "/download/visualize-enchanted-book",
-      },
-      { name: "Circular Hotbar", url: "/download/circular-hotbar" },
-      { name: "Vertical Hotbar", url: "/download/vertical-hotbar" },
-      {
-        name: "Cave & Cliff Start Animation",
-        url: "/download/cave-and-cliff-start-animation",
-      },
-      { name: "Subtitle", url: "/download/subtitle" },
-      { name: "Dynamic Day Counter", url: "/download/dynamic-day-counter" },
-    ],
-  },
-
-  {
-    id: "/download/dynamic-day-counter",
+    id: "dynamic-day-counter",
     title: "Dynamic Day Counter",
     image: dynamicDayCounterThumb,
     links: [
@@ -65,7 +38,7 @@ const links = [
   },
 
   {
-    id: "/download/durability-ping",
+    id: "durability-ping",
     title: "Durability Ping!",
     image: durabilityPingThumb,
     links: [
@@ -91,7 +64,7 @@ const links = [
   },
 
   {
-    id: "/download/coordinates-hud",
+    id: "coordinates-hud",
     title: "Coordinates HUD",
     image: coordinatesHudThumb,
     links: [
@@ -112,7 +85,7 @@ const links = [
   },
 
   {
-    id: "/download/day-and-entity-counter",
+    id: "day-and-entity-counter",
     title: "Day & Entity Counter",
     image: dayAndEntityCounterThumb,
     links: [
@@ -133,7 +106,7 @@ const links = [
   },
 
   {
-    id: "/download/biome-check",
+    id: "biome-check",
     title: "Biome Check",
     image: biomeCheckThumb,
     links: [
@@ -154,7 +127,7 @@ const links = [
   },
 
   {
-    id: "/download/trade-unlocker",
+    id: "trade-unlocker",
     title: "Trade Unlocker",
     image: tradeUnlockerThumb,
     links: [
@@ -175,7 +148,7 @@ const links = [
   },
 
   {
-    id: "/download/visualize-enchanted-book",
+    id: "visualize-enchanted-book",
     title: "Visualize Enchanted Book",
     image: visualizeEnchantedBookThumb,
     links: [
@@ -205,7 +178,7 @@ const links = [
   },
 
   {
-    id: "/download/circular-hotbar",
+    id: "circular-hotbar",
     title: "Circular Hotbar",
     image: circularHotbarThumb,
     links: [
@@ -234,7 +207,7 @@ const links = [
   },
 
   {
-    id: "/download/vertical-hotbar",
+    id: "vertical-hotbar",
     title: "Vertical Hotbar",
     image: verticalHotbarThumb,
     links: [
@@ -255,7 +228,7 @@ const links = [
   },
 
   {
-    id: "/download/cave-and-cliff-start-animation",
+    id: "cave-and-cliff-start-animation",
     title: "Cave & Cliff Sart Animation",
     image: caveAndCliffStartAnimationThumb,
     links: [
@@ -276,7 +249,7 @@ const links = [
   },
 
   {
-    id: "/download/subtitle",
+    id: "subtitle",
     title: "Subtitle",
     image: subtitleThumb,
     links: [

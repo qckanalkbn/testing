@@ -10,7 +10,7 @@ const adScripts = [
   "//pl23204289.highcpmgate.com/eb50a8951714a0c2e3bf89fb95a7facc/invoke.js",
   "//www.topcreativeformat.com/799650c8d60c3fe250dbdc38dcae35aa/invoke.js",
 ];
-const RedirectLink = ({ props }) => {
+const RedirectLink = () => {
   const adsContainerRef = useRef(null);
 
   useEffect(() => {
@@ -78,7 +78,7 @@ const RedirectLink = ({ props }) => {
     });
 
     observer.observe(adsContainerRef.current, { childList: true });
-  }, [props]);
+  }, []);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -89,13 +89,13 @@ const RedirectLink = ({ props }) => {
   }, []);
 
   return (
-    <div>
+    <div className="main-container">
       <center>
-        <div>
+        <p>
           Downloading file..., <br />
           If download error please use browser: Chrome, Edge,FireFox, Vivaldi
-        </div>
-        <div style={{ marginTop: "100px" }}>ADS</div>
+        </p>
+        <p style={{ marginTop: "100px" }}>ADS</p>
         <div
           ref={adsContainerRef}
           id="container-eb50a8951714a0c2e3bf89fb95a7facc"

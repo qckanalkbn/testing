@@ -1,34 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Main from "./components/Main";
-import DownloadFile from "./components/DownloadFile";
+import Home from "./components/Home";
+import DownloadHandler from "./components/DownloadHandler";
 import RedirectLink from "./components/RedirectLink";
-import Files from "./components/Files";
-import Links from "./components/Links";
 
 function App() {
   return (
     <div>
       <Router>
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/download/:id" element={<DownloadHandler />} />
+          <Route path="/redirect/:id" element={<RedirectLink />} />
           <Route
-            path={"/redirect/353e7946-e9f8-4e84-a9a9-4d4885b2ebf1"}
-            element={<RedirectLink />}
+            path="*"
+            element={<h1 className="main-container">404 NOT FOUND</h1>}
           />
-          {Files.map((prop) => (
-            <Route
-              key={prop.id}
-              path={prop.id}
-              element={<DownloadFile props={prop} />}
-            />
-          ))}
-          {Links.map((prop) => (
-            <Route
-              key={prop.id}
-              path={prop.id}
-              element={<Main props={prop} />}
-            />
-          ))}
         </Routes>
       </Router>
     </div>

@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import Files from "./Files";
 
-const DownloadFile = ({ props }) => {
+const DownloadFile = () => {
+  const { id } = useParams();
+  const col = Files.find((p) => p.id === id);
   const navigate = useNavigate();
   useEffect(() => {
     const serialNumber = () => {
@@ -15,36 +18,47 @@ const DownloadFile = ({ props }) => {
 
     const downloadFile = async () => {
       try {
-        const response = await fetch(props.filePath);
+        const response = await fetch(
+          `/downloads/${col.fileName}.${col.formatFile}`
+        );
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
 
         const downloadLink = document.createElement("a");
         downloadLink.href = url;
         downloadLink.type = "application/octet-stream";
-        downloadLink.download = `${props.fileName}-${serialNumber()}.${
-          props.formatFile
+        downloadLink.download = `${col.fileName}-${serialNumber()}.${
+          col.formatFile
         }`;
         document.body.appendChild(downloadLink);
         downloadLink.click();
         document.body.removeChild(downloadLink);
         URL.revokeObjectURL(url);
-        navigate("/redirect/353e7946-e9f8-4e84-a9a9-4d4885b2ebf1");
+        navigate(
+          `/redirect/${"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+            /[xy]/g,
+            (c) => {
+              const r = (Math.random() * 16) | 0,
+                v = c === "x" ? r : (r & 0x3) | 0x8;
+              return v.toString(16);
+            }
+          )}`
+        );
       } catch (error) {
         console.error("Error downloading file:", error);
       }
     };
 
     downloadFile();
-  }, [navigate, props]);
+  }, [navigate, col]);
 
   return (
-    <div>
+    <div className="main-container">
       <center>
-        <div>
+        <p>
           Downloading file..., <br />
           If download error please use browser: Chrome, Edge,FireFox, Vivaldi
-        </div>
+        </p>
       </center>
     </div>
   );
