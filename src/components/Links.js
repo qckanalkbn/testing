@@ -29,11 +29,6 @@ const links = [
         name: "Linkvertise [ZIP]",
         url: "https://link-hub.net/845273/dynamic-day-counter-zip",
       },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
-      },
     ],
   },
 
@@ -55,11 +50,6 @@ const links = [
         name: "Linkvertise [ZIP]",
         url: "https://direct-link.net/845273/durabilitypingzipnew",
       },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
-      },
     ],
   },
 
@@ -75,11 +65,6 @@ const links = [
       {
         name: "Linkvertise",
         url: "https://direct-link.net/845273/coordinates-hud-for-beta",
-      },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
       },
     ],
   },
@@ -97,11 +82,6 @@ const links = [
         name: "Linkvertise",
         url: "https://link-target.net/845273/dayentitycounter-for-beta",
       },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
-      },
     ],
   },
 
@@ -118,11 +98,6 @@ const links = [
         name: "Linkvertise",
         url: "https://link-center.net/845273/biome-check-for-beta",
       },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
-      },
     ],
   },
 
@@ -138,11 +113,6 @@ const links = [
       {
         name: "Linkvertise",
         url: "https://link-hub.net/845273/trade-unlocker",
-      },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
       },
     ],
   },
@@ -169,11 +139,6 @@ const links = [
         url: "https://www.curseforge.com/minecraft/texture-packs/xalis-enchanted-books",
         variant: "link-button-realm",
       },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
-      },
     ],
   },
 
@@ -198,11 +163,6 @@ const links = [
         name: "Linkvertise [ZIP]",
         url: "https://link-center.net/845273/circular-hotbar-zip",
       },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
-      },
     ],
   },
 
@@ -219,11 +179,6 @@ const links = [
         name: "Linkvertise",
         url: "https://direct-link.net/845273/vertical-hotbar",
       },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
-      },
     ],
   },
 
@@ -239,11 +194,6 @@ const links = [
       {
         name: "Linkvertise",
         url: "https://link-center.net/845273/cave-and-cliff-start-anim",
-      },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
       },
     ],
   },
@@ -264,11 +214,6 @@ const links = [
       {
         name: "Linkvertise [ZIP]",
         url: "https://link-center.net/845273/subtitle-zip",
-      },
-      {
-        name: "Home",
-        url: "/",
-        variant: "link-button-destructive",
       },
     ],
   },

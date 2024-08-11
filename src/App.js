@@ -1,21 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import DownloadHandler from "./components/DownloadHandler";
+import Main from "./components/Main";
 import RedirectLink from "./components/RedirectLink";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/download/:id" element={<DownloadHandler />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/download/:id" element={<Main />} />
           <Route path="/redirect/:id" element={<RedirectLink />} />
-          <Route
-            path="*"
-            element={<h1 className="main-container">404 NOT FOUND</h1>}
-          />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </div>
